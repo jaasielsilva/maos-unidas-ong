@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos sociais, voluntariado e doações – Mãos Unidas</title>
+  <meta name="description" content="Conheça os projetos sociais da Mãos Unidas, veja como ser voluntário e como fazer uma doação.">
+  <meta property="og:title" content="Projetos sociais – Mãos Unidas">
+  <meta property="og:image" content="img/educacao.jpg">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="40" height="40">Mãos Unidas</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="main-nav" id="menu" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section aria-labelledby="titulo-projetos">
+      <div class="container">
+        <h1 id="titulo-projetos">Nossos projetos sociais</h1>
+        <p>Cada projeto possui metas, indicadores de impacto e prestação de contas pública.</p>
+        <div class="grid grid-3">
+          <article class="card">
+            <picture>
+              <source srcset="img/educacao-sm.webp" type="image/webp">
+              <img src="img/educacao-sm.jpg" width="600" height="350" alt="Ilustração em azul representando o projeto de educação">
+            </picture>
+            <div class="card-body">
+              <span class="tag">Educação</span>
+              <h2>Reforço Escolar Solidário</h2>
+              <p>Aulas de apoio para 400 crianças da rede pública. Impacto: 87% de aprovação.</p>
+            </div>
+          </article>
+          <article class="card">
+            <picture>
+              <source srcset="img/meio-ambiente-sm.webp" type="image/webp">
+              <img src="img/meio-ambiente-sm.jpg" width="600" height="350" loading="lazy" alt="Ilustração em verde representando o projeto ambiental">
+            </picture>
+            <div class="card-body">
+              <span class="tag">Meio ambiente</span>
+              <h2>Horta Comunitária</h2>
+              <p>Hortas urbanas que produzem alimento e renda para 120 famílias.</p>
+            </div>
+          </article>
+          <article class="card">
+            <picture>
+              <source srcset="img/saude-sm.webp" type="image/webp">
+              <img src="img/saude-sm.jpg" width="600" height="350" loading="lazy" alt="Ilustração em rosa representando o projeto de saúde">
+            </picture>
+            <div class="card-body">
+              <span class="tag">Saúde</span>
+              <h2>Saúde em Movimento</h2>
+              <p>Mutirões de exames e vacinação em bairros com pouco acesso à saúde.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt" id="voluntariado" aria-labelledby="titulo-vol">
+      <div class="container grid grid-2">
+        <div>
+          <h2 id="titulo-vol">Seja voluntário</h2>
+          <p>Oferecemos oportunidades para todos os perfis e disponibilidades:</p>
+          <ol>
+            <li>Preencha o <a href="cadastro.html">formulário de cadastro</a>.</li>
+            <li>Participe de uma conversa de acolhimento e treinamento.</li>
+            <li>Escolha o projeto e comece a atuar.</li>
+            <li>Receba certificado digital de participação.</li>
+          </ol>
+          <p><a class="btn" href="cadastro.html">Quero me cadastrar</a></p>
+        </div>
+        <picture>
+          <source srcset="img/voluntarios-sm.webp" type="image/webp">
+          <img src="img/voluntarios-sm.jpg" width="600" height="350" loading="lazy" alt="Ilustração de voluntários em grupo">
+        </picture>
+      </div>
+    </section>
+
+    <section id="doar" aria-labelledby="titulo-doar">
+      <div class="container grid grid-2">
+        <picture>
+          <source srcset="img/doacao-sm.webp" type="image/webp">
+          <img src="img/doacao-sm.jpg" width="600" height="350" loading="lazy" alt="Ilustração em laranja representando doações">
+        </picture>
+        <div>
+          <h2 id="titulo-doar">Como doar</h2>
+          <p>Toda doação é aplicada em projetos e divulgada em nosso relatório de transparência.</p>
+          <ul>
+            <li><strong>Pix:</strong> chave contato@maosunidas.org</li>
+            <li><strong>Transferência:</strong> Banco 000, agência 0000, conta 00000-0</li>
+            <li><strong>Doação recorrente:</strong> a partir de R$ 20 por mês</li>
+          </ul>
+          <p><label for="meta">Meta da campanha “Material Escolar 2026”: R$ 32.500 de R$ 50.000</label></p>
+          <progress id="meta" max="50000" value="32500">65%</progress>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt" aria-labelledby="titulo-contas">
+      <div class="container">
+        <h2 id="titulo-contas">Prestação de contas 2025</h2>
+        <div class="table-wrap">
+          <table>
+            <caption>Aplicação dos recursos</caption>
+            <thead><tr><th scope="col">Área</th><th scope="col">Valor aplicado</th><th scope="col">Percentual</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Educação</th><td>R$ 180.000</td><td>45%</td></tr>
+              <tr><th scope="row">Saúde</th><td>R$ 120.000</td><td>30%</td></tr>
+              <tr><th scope="row">Meio ambiente</th><td>R$ 80.000</td><td>20%</td></tr>
+              <tr><th scope="row">Administração</th><td>R$ 20.000</td><td>5%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h2>Mãos Unidas</h2><p>ONG de transformação social. CNPJ 00.000.000/0001-00.</p></div>
+        <nav aria-label="Rodapé"><h2>Navegação</h2><ul><li><a href="index.html">Início</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="cadastro.html">Cadastro</a></li></ul></nav>
+        <div><h2>Fale conosco</h2><p><a href="mailto:contato@maosunidas.org">contato@maosunidas.org</a><br>(85) 3333-4444</p></div>
+      </div>
+      <p class="copy">&copy; 2026 Mãos Unidas. Projeto acadêmico.</p>
+    </div>
+  </footer>
+</body>
+</html>
