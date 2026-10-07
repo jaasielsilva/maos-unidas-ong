@@ -16,11 +16,18 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="40" height="40">Mãos Unidas</a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
       <nav class="main-nav" id="menu" aria-label="Principal">
         <ul>
           <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li class="nav-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="submenu-projetos">Projetos</button>
+            <ul class="dropdown-menu" id="submenu-projetos">
+              <li><a href="#educacao">Educação</a></li>
+              <li><a href="#meio-ambiente">Meio ambiente</a></li>
+              <li><a href="#saude">Saúde</a></li>
+            </ul>
+          </li>
           <li><a href="cadastro.html">Cadastro</a></li>
           <li><a href="index.html#contato">Contato</a></li>
         </ul>
@@ -34,7 +41,7 @@
         <h1 id="titulo-projetos">Nossos projetos sociais</h1>
         <p>Cada projeto possui metas, indicadores de impacto e prestação de contas pública.</p>
         <div class="grid grid-3">
-          <article class="card">
+          <article class="card" id="educacao">
             <picture>
               <source srcset="img/educacao-sm.webp" type="image/webp">
               <img src="img/educacao-sm.jpg" width="600" height="350" alt="Ilustração em azul representando o projeto de educação">
@@ -45,7 +52,7 @@
               <p>Aulas de apoio para 400 crianças da rede pública. Impacto: 87% de aprovação.</p>
             </div>
           </article>
-          <article class="card">
+          <article class="card" id="meio-ambiente">
             <picture>
               <source srcset="img/meio-ambiente-sm.webp" type="image/webp">
               <img src="img/meio-ambiente-sm.jpg" width="600" height="350" loading="lazy" alt="Ilustração em verde representando o projeto ambiental">
@@ -56,7 +63,7 @@
               <p>Hortas urbanas que produzem alimento e renda para 120 famílias.</p>
             </div>
           </article>
-          <article class="card">
+          <article class="card" id="saude">
             <picture>
               <source srcset="img/saude-sm.webp" type="image/webp">
               <img src="img/saude-sm.jpg" width="600" height="350" loading="lazy" alt="Ilustração em rosa representando o projeto de saúde">

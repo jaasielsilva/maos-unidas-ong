@@ -1,0 +1,52 @@
+:root {
+  --color-primary-900: #0d3a36;
+  --color-primary-700: #16655c;
+  --color-primary-500: #1f7d73;
+  --color-secondary-500: #f5a623;
+  --color-secondary-700: #d17a10;
+  --color-surface: #ffffff;
+  --color-surface-soft: #edf4f1;
+  --color-surface-alt: #f6f1ea;
+  --color-text: #1e2a2a;
+  --color-text-soft: #4d5d5a;
+  --color-border: #d8e3df;
+  --color-success: #1a8f65;
+  --color-success-soft: #e8f6ee;
+  --color-danger: #c5392d;
+  --color-danger-soft: #fde9e7;
+  --color-shadow: rgba(18, 39, 35, 0.12);
+  --color-shadow-strong: rgba(13, 58, 54, 0.18);
+
+  --font-family-base: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-size-xxs: 0.75rem;
+  --font-size-xs: 0.875rem;
+  --font-size-sm: 0.9375rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2.25rem;
+  --font-size-3xl: 3rem;
+  --font-size-4xl: 4rem;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 10px 30px var(--color-shadow);
+  --shadow-card: 0 16px 32px rgba(22, 101, 92, 0.08);
+
+  --container-width: 1180px;
+  --line-height-base: 1.6;
+  --line-height-tight: 1.2;
+
+  --transition-fast: 180ms ease;
+  --transition-base: 260ms ease;
+}

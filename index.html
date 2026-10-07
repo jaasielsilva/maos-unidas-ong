@@ -16,11 +16,18 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="40" height="40">Mãos Unidas</a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
       <nav class="main-nav" id="menu" aria-label="Principal">
         <ul>
           <li><a href="index.html" aria-current="page">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
+          <li class="nav-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="submenu-projetos">Projetos</button>
+            <ul class="dropdown-menu" id="submenu-projetos">
+              <li><a href="projetos.html#educacao">Educação</a></li>
+              <li><a href="projetos.html#meio-ambiente">Meio ambiente</a></li>
+              <li><a href="projetos.html#saude">Saúde</a></li>
+            </ul>
+          </li>
           <li><a href="cadastro.html">Cadastro</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
@@ -30,11 +37,21 @@
 
   <main id="conteudo">
     <section class="hero" aria-labelledby="titulo-hero">
+      <div class="container">
+        <div class="alert-banner" role="alert">
+          <strong>Atenção:</strong>
+          Campanha de material escolar 2026 em andamento — 65% da meta já foi atingida.
+        </div>
+      </div>
       <div class="container hero-grid">
         <div>
           <h1 id="titulo-hero">Juntos, transformamos realidades</h1>
           <p>Há 15 anos a Mãos Unidas leva educação, saúde e cuidado ambiental a comunidades em situação de vulnerabilidade.</p>
-          <p><a class="btn" href="projetos.html#doar">Quero doar</a> <a class="btn btn-sec" href="cadastro.html">Quero ser voluntário</a></p>
+          <div class="hero-actions">
+            <a class="btn" href="projetos.html#doar" data-toast="Sua doação ajuda a transformar comunidades!" data-toast-type="success">Quero doar</a>
+            <button class="btn btn-secondary btn-modal-trigger" type="button" data-modal-target="impacto-modal">Saiba mais</button>
+            <a class="btn btn-secondary" href="cadastro.html">Quero ser voluntário</a>
+          </div>
         </div>
         <picture>
           <source srcset="img/hero-sm.webp 600w, img/hero.webp 1200w" sizes="(min-width: 768px) 50vw, 100vw" type="image/webp">
@@ -110,5 +127,23 @@
       <p class="copy">&copy; 2026 Mãos Unidas. Projeto acadêmico.</p>
     </div>
   </footer>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+  <div class="modal-overlay" id="impacto-modal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+      <button class="modal-close" type="button" aria-label="Fechar modal" data-close-modal>×</button>
+      <h2 id="modal-titulo">Plano de impacto 2026</h2>
+      <p>Em 2026, a Mãos Unidas ampliará ações em educação, saúde e meio ambiente em comunidades vulneráveis do território.</p>
+      <ul>
+        <li>+1.200 crianças atendidas em reforço escolar</li>
+        <li>18 mutirões de saúde e cidadania realizados</li>
+        <li>80 famílias apoiadas com hortas e renda solidária</li>
+      </ul>
+      <div class="modal-actions">
+        <button class="btn" type="button" data-close-modal>Entendi</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
