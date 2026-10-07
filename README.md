@@ -1,25 +1,34 @@
 # Mãos Unidas – Plataforma web para ONGs
 
-Projeto acadêmico (HTML5 semântico, CSS3 responsivo e JavaScript).
+Projeto acadêmico (Uso de Design): HTML5 semântico, CSS3 responsivo com design system e JavaScript.
+
+🔗 **Acesse o site:** https://jaasielsilva.github.io/maos-unidas-ong/
+
+## Páginas
+- [Início](https://jaasielsilva.github.io/maos-unidas-ong/) – missão, visão, valores, conquistas, equipe e contato
+- [Projetos](https://jaasielsilva.github.io/maos-unidas-ong/projetos.html) – projetos sociais, voluntariado, como doar
+- [Cadastro](https://jaasielsilva.github.io/maos-unidas-ong/cadastro.html) – formulário com validação visual e máscaras (CPF, telefone, CEP)
 
 ## Estrutura
 ```
-index.html      Página inicial (missão, visão, valores, equipe, contato)
-projetos.html   Projetos sociais, voluntariado, como doar, prestação de contas
-cadastro.html   Formulário com validação HTML5 e máscaras (CPF, telefone, CEP)
-css/style.css   Sistema de design mobile-first (breakpoints 768px e 1024px)
-js/main.js      Menu responsivo, máscaras e validação de CPF
-img/            Imagens em WebP e JPG (versões -sm para mobile)
+index.html, projetos.html, cadastro.html
+css/
+  style.css        Ponto de entrada (importa os módulos abaixo)
+  variables.css    Design system: cores, tipografia, espaçamentos, sombras
+  base.css         Reset, tipografia base, utilitários
+  components.css   Header, menu, botões, cards, formulários, alertas, toasts, modal, tags
+  layout.css       Grid de 12 colunas, estrutura da página
+  responsive.css   Breakpoints: 480, 640, 768, 1024 e 1280px
+js/main.js         Menu hambúrguer/dropdown, máscaras, validação, toasts e modal
+img/               Imagens em WebP e JPG (versões -sm para mobile)
 ```
 
 ## Recursos
-- Estrutura semântica (header, nav, main, section, article, footer), hierarquia de títulos consistente
-- Acessibilidade: skip link, foco visível, aria, contraste AA, navegação por teclado
-- Imagens `<picture>` em WebP com fallback JPG, `loading="lazy"`
-- Validação nativa (required, pattern, type, min/max) e agrupamento com `fieldset`/`legend`
+- Design system com variáveis CSS (cores, 9 tamanhos de fonte, espaçamento de 8 a 64px)
+- CSS Grid na estrutura da página e no grid de 12 colunas; Flexbox nos componentes
+- Menu responsivo com submenu dropdown e menu hambúrguer no mobile
+- Componentes: cards, botões (hover, focus, active, disabled), formulários, alerts, toasts, modal e tags
+- Acessibilidade: skip link, foco visível, aria e navegação por teclado
 
 ## Como executar
-Abra `index.html` no navegador. Publicação: GitHub Pages (HTTPS).
-
-## Validação
-Valide cada HTML em https://validator.w3.org/.
+Abra `index.html` no navegador ou acesse o link do site acima (GitHub Pages).

@@ -95,7 +95,7 @@
   opacity: 0.8;
 }
 
-.dropdown-menu {
+.main-nav .dropdown-menu {
   display: none;
   margin: 0.5rem 0 0;
   padding: 0.5rem;
@@ -106,8 +106,9 @@
   border-radius: var(--radius-sm);
 }
 
-.nav-dropdown.is-open > .dropdown-menu {
-  display: block;
+.main-nav .nav-dropdown.is-open > .dropdown-menu {
+  display: flex;
+  flex-direction: column;
 }
 
 .dropdown-menu a {
@@ -718,4 +719,24 @@ figcaption {
   border-left: 5px solid var(--color-secondary-500);
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
   background: rgba(245, 166, 35, 0.08);
+}
+
+/* Elementos sobre o fundo escuro do hero */
+.hero .alert-banner {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--color-surface);
+}
+
+.hero .alert-banner strong {
+  color: var(--color-secondary-500);
+}
+
+.hero .btn-secondary {
+  border-color: rgba(255, 255, 255, 0.6);
+  color: var(--color-surface);
+}
+
+.hero .btn-secondary:hover {
+  background: var(--color-surface);
+  color: var(--color-primary-900);
 }
