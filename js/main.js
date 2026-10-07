@@ -129,6 +129,13 @@ if (form) {
     cpf.setCustomValidity(cpf.value.length === 14 && !cpfValido(cpf.value) ? 'CPF inválido.' : '');
   });
 
+  const enviar = form.querySelector('[type="submit"]');
+  const atualizarEnvio = () => { enviar.disabled = !form.checkValidity(); };
+  form.addEventListener('input', atualizarEnvio);
+  form.addEventListener('change', atualizarEnvio);
+  form.addEventListener('reset', () => setTimeout(atualizarEnvio));
+  atualizarEnvio();
+
   form.addEventListener('submit', event => {
     event.preventDefault();
     if (!form.checkValidity()) {
